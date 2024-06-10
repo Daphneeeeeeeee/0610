@@ -1,4 +1,4 @@
-const apiKey = 'sk-proj-79CXIdTWQsPn9vzsiYAuT3BlbkFJcMSPizkF8bqq6o7em7D6'; 
+/*const apiKey = 'sk-proj-79CXIdTWQsPn9vzsiYAuT3BlbkFJcMSPizkF8bqq6o7em7D6';*/
 
 let currentChapter = 1;
 
