@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>風起雲湧</title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=PT+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #e3d6b8;
+            font-family: 'PT Serif', serif;
+        }
+
+        .game-container {
+            display: flex;
+            flex-direction: column;
+            width: 60%;
+            margin: auto;
+            padding: 20px;
+            background-color: #fdf5e6;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .message {
+            margin-bottom: 10px;
+        }
+
+        .user {
+            font-weight: bold;
+        }
+
+        .bot {
+            color: #4a3c31;
+        }
+
+        .options button {
+            background-color: #8b5a2b;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-family: 'Great Vibes', cursive;
+        }
+
+        .options button:hover {
+            background-color: #a0522d;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+       
+        .text-options {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .welcome-screen {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            z-index: 999;
+        }
+
+        .welcome-content {
+            text-align: center;
+            color: white;
+        }
+
+        .start-button {
+            background-color: #8b5a2b;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-family: 'Great Vibes', cursive;
+        }
+
+        .start-button:hover {
+            background-color: #a0522d;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="welcome-screen">
+            <div class="welcome-content">
+                <h2>歡迎來到《風起雲湧》</h2>
+                <p>在《風起雲湧》中，每一個選擇都將帶來不同的結果和體驗。你將扮演一位密碼專家，經歷戰爭的挑戰與人際的糾葛，請享受這段驚心動魄的旅程。</p>
+                <button class="start-button" onclick="startGame()">開始遊戲</button>
+            </div>
+        </div>
+        <div class="game-title">
+            <i class="fas fa-gamepad"></i>
+            風起雲湧
+        </div>
+        <div class="image-section">
+        </div>
+        <div class="game-container">
+            <div id="story"></div>
+            <div id="options" class="options"></div>
+        </div>
+    </div>
+    <script src="game.js"></script>
+    <script>
+        function startGame() {
+            document.querySelector('.welcome-screen').style.display = 'none';
+        }
+    </script>
+</body>
+
+</html>
